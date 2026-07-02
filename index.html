@@ -2,42 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abstraktius Artimus</title>
+    <title>Abstraktius Artimus | Abstrakt Noize</title>
     <style>
-        body { background: #000; color: #fff; font-family: 'Courier New', Courier, monospace; text-align: center; padding: 20px; margin: 0; }
-        .logo-header { width: 150px; margin-top: 30px; margin-bottom: 20px; }
-        .bio { max-width: 600px; margin: 0 auto 40px auto; line-height: 1.6; color: #ccc; }
-        .media-section { margin: 40px auto; max-width: 600px; }
-        .nav { margin-top: 40px; }
-        .nav a { color: #ff0000; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: 'Courier New', Courier, monospace; 
+            text-align: center; 
+            padding: 20px; 
+            margin: 0; 
+        }
+        /* Logo styling with a subtle hover effect */
+        .logo-header { 
+            width: 150px; 
+            margin-top: 30px; 
+            margin-bottom: 20px; 
+            transition: transform 0.2s ease-in-out;
+        }
+        .logo-header:hover {
+            transform: scale(1.05); 
+        }
+        .bio { 
+            max-width: 600px; 
+            margin: 0 auto 40px auto; 
+            line-height: 1.6; 
+            color: #ccc; 
+        }
+        .bio h1 {
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+        .media-section { 
+            margin: 40px auto; 
+            max-width: 600px; 
+            border-top: 1px solid #333;
+            padding-top: 30px;
+        }
+        .media-section h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ff0000;
+        }
+        .nav { 
+            margin-top: 40px; 
+            padding-bottom: 40px;
+        }
+        .nav a { 
+            color: #ff0000; 
+            text-decoration: none; 
+            margin: 0 15px; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .nav a:hover {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 
-    <img src="logo.png" class="logo-header" alt="Abstraktius Artimus">
+    <a href="index.html">
+        <img src="logo.png" class="logo-header" alt="Abstraktius Artimus">
+    </a>
 
     <div class="bio">
         <h1>ABSTRAKTIUS ARTIMUS</h1>
-        <p>Producer, Emcee, and Audio Engineer. Crafting Abstrakt Noize.</p>
+        <p>Producer, Emcee, and Audio Engineer.</p>
+        <p>Hailing from Denver and creating out of Colorado Springs, bringing the raw elements of everyday sound into the music. Crafting Abstrakt Noize.</p>
     </div>
 
     <div class="media-section">
-        <h3>Featured Video</h3>
+        <h3>Featured Visuals</h3>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/iPu0wWwBre0?si=elW4Rrguh_j8fK2N" frameborder="0" allowfullscreen></iframe>
     </div>
-   
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/36ZQelM5VwJYQ9MqY19aHT?utm_source=generator&theme=0&si=653214adacd54497" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     <div class="media-section">
         <h3>Music Catalog</h3>
         </div>
 
     <div class="nav">
-        <a href="https://www.facebook.com">Facebook</a> | 
-        <a href="https://soundcloud.com">SoundCloud</a> | 
+        <a href="https://www.facebook.com">Facebook</a> 
+        <a href="https://soundcloud.com">SoundCloud</a> 
         <a href="https://www.apple.com">Apple Music</a>
     </div>
 
 </body>
 </html>
-      
