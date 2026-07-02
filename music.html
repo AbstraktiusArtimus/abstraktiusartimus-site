@@ -36,6 +36,19 @@
     opacity: 0.15; 
     pointer-events: none;
 }
+        .video-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 40px auto;
+    }
+
+    .video-grid iframe {
+        flex: 0 1 300px;
+        border: none;
+    }
 
     @keyframes smoke-move {
         0% { background-position: 0 0; }
