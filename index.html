@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <title>Abstraktius Artimus</title>
     <style>
-        body { 
-            background: linear-gradient(to bottom, #4B0082, #000000);
-            background-attachment: fixed;
-            min-height: 100vh;
-            color: #fff; 
-            font-family: monospace; 
-            text-align: center; 
-            padding: 20px; 
-            margin: 0; 
-        }
+        /* Update your body style to include position */
+body { 
+    background: linear-gradient(to bottom, #4B0082, #000000);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fff; 
+    font-family: monospace; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 0; 
+    position: relative; /* Essential for the smoke layer */
+    overflow: hidden;   /* Keeps the smoke contained */
+}
+
+/* New Smoke Layer */
+.smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+    animation: drift 10s infinite alternate;
+    pointer-events: none; /* Allows users to still click links underneath */
+}
+
+@keyframes drift {
+    from { transform: translate(-10%, -10%); }
+    to { transform: translate(10%, 10%); }
+}
         .logo { width: 150px; margin-bottom: 20px; }
         .section { margin: 40px auto; max-width: 600px; }
     </style>
